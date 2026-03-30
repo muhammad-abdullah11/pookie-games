@@ -3,19 +3,19 @@ import InfoBox from './Components/InfoBox'
 import HomePage from './Components/Pages/HomePage'
 import TicTacToe from './Components/Games/TicTacToe'
 import RockPaperScissors from './Components/Games/RockPaperScissors'
+import MemoryMatch from './Components/Games/MemoryMatch'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-function App() {
 
+function App() {
   return (
     <Router>
-
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/games/tic-tac-toe' element={<TicTacToe />} />
         <Route path='/games/rock-paper-scissors' element={<RockPaperScissors />} />
+        <Route path='/games/memory-match' element={<MemoryMatch />} />
       </Routes>
     </Router>
-
   )
 }
 
