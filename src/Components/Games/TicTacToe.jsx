@@ -17,7 +17,6 @@ export default function TicTacToe() {
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-center p-6"
-      style={{ backgroundColor: "#ccd5ae" }}
     >
       <h1 className="text-4xl font-bold text-black">Tic-Tac-Toe</h1>
 
@@ -118,15 +117,15 @@ function Game({ mode, onBack }) {
           ? winner === "draw"
             ? "It's a Draw!"
             : mode === "computer"
-            ? winner === human
-              ? "You Win!"
-              : "Computer Wins!"
-            : `Winner: ${winner}`
+              ? winner === human
+                ? "You Win!"
+                : "Computer Wins!"
+              : `Winner: ${winner}`
           : mode === "computer"
-          ? player === human
-            ? "Your Turn"
-            : "Computer Thinking..."
-          : `Turn: ${player}`}
+            ? player === human
+              ? "Your Turn"
+              : "Computer Thinking..."
+            : `Turn: ${player}`}
       </div>
 
       <section className="grid grid-cols-3 gap-4 p-6">

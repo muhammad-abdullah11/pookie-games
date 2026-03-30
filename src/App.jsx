@@ -2,18 +2,20 @@ import './App.css'
 import InfoBox from './Components/InfoBox'
 import HomePage from './Components/Pages/HomePage'
 import TicTacToe from './Components/Games/TicTacToe'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import RockPaperScissors from './Components/Games/RockPaperScissors'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
 
   return (
     <Router>
 
-    <Routes>
-      <Route path='/' element={<HomePage/>}/>
-      <Route path='/games/tic-tac-toe' element={<TicTacToe/>}/>
-    </Routes>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/games/tic-tac-toe' element={<TicTacToe />} />
+        <Route path='/games/rock-paper-scissors' element={<RockPaperScissors />} />
+      </Routes>
     </Router>
-    
+
   )
 }
 
